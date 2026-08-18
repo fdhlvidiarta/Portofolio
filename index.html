@@ -97,27 +97,34 @@
       </div>
     </nav>
 
-    <header class="hero section-target" id="home">
+<header class="hero section-target" id="home">
       <div class="hero-layout">
         <div class="hero-text">
           <p class="hero-eyebrow">Curriculum Vitae &amp; Portfolio</p>
           <h1 class="hero-name">Fadhil <em>Vidiarta</em></h1>
           <p class="hero-role lang-id">
-  Portofolio ini adalah ruang untuk bereksperimen, berbagi karya, dan menampilkan sisi kreatif saya.
-</p>
-<p class="hero-role lang-en">
-  This portfolio is a space to experiment, share projects, and highlight my creative side.
-</p>
+            Portofolio ini adalah ruang untuk bereksperimen, berbagi karya, dan menampilkan sisi kreatif saya.
+          </p>
+          <p class="hero-role lang-en">
+            This portfolio is a space to experiment, share projects, and highlight my creative side.
+          </p>
 
           <div class="hero-cta">
-            <a href="mailto:vidiartafadhil@gmail.com" class="btn btn-primary">
-              <i class="fa-regular fa-envelope"></i>
-              <span class="lang-id">Hubungi Saya</span
-              ><span class="lang-en">Get In Touch</span>
+            <!-- Tombol CV (Primary) - Pastikan nama file adalah CV.pdf -->
+            <a href="assets/CV_Fadhil Vidiarta.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span class="lang-id">Lihat CV Saya</span><span class="lang-en">View My CV</span>
             </a>
+            
+            <!-- Tombol Email (Outline) -->
+            <a href="mailto:fadhilv05@gmail.com" class="btn btn-outline">
+              <i class="fa-regular fa-envelope"></i>
+              <span class="lang-id">Hubungi Saya</span><span class="lang-en">Get In Touch</span>
+            </a>
+            
+            <!-- Tombol Proyek (Outline) -->
             <a href="#projects" class="btn btn-outline">
-              <span class="lang-id">Lihat Proyek</span
-              ><span class="lang-en">Explore Projects</span>
+              <span class="lang-id">Lihat Proyek</span><span class="lang-en">Explore Projects</span>
               <i class="fa-solid fa-arrow-down-long"></i>
             </a>
           </div>
@@ -126,7 +133,7 @@
         <div class="hero-image-wrapper">
           <div class="image-inner-border"></div>
           <img
-            src="assets/me.jpeg"
+            src="assets/mi.jpeg"
             alt="Fadhil Vidiarta Profile"
             class="hero-photo"
           />
@@ -506,16 +513,22 @@
             <i class="fa-solid fa-network-wired"></i> Network Engineering
           </div>
           <div class="skill-item">
-            <span>Local &amp; Wide Area Network (LAN / WAN)</span>
+            <span>Local Area Network (LAN), Wide Area Network (WAN)</span>
           </div>
           <div class="skill-item">
-            <span>Fiber To The Home (FTTH) Infrastructure</span>
+            <span>Fiber To The Home (FTTH), OTDR, OPM</span>
           </div>
           <div class="skill-item">
-            <span>Mikrotik</span>
+            <span>Mikrotik, Linux (Ubuntu & Debian)</span>
           </div>
           <div class="skill-item">
-            <span>Cloud Computing &amp; Server Infrastructure</span>
+            <span>IP CCTV (NVR)</span>
+          </div>
+          <div class="skill-item">
+            <span>Network troubleshooting</span>
+          </div>
+          <div class="skill-item">
+            <span>Cloud Computing &amp; Virtualisai</span>
           </div>
         </div>
         <div class="skill-group">
@@ -524,16 +537,16 @@
             Engineering
           </div>
           <div class="skill-item">
-            <span>CodeIgniter &amp; PHP Language</span>
+            <span>CodeIgniter, PHP &amp; JS Language</span>
           </div>
           <div class="skill-item">
-            <span>Flutter Framework &amp; Dart Language</span>
+            <span>Flutter Framework, Dart, &amp; Kotlin Language</span>
           </div>
           <div class="skill-item">
-            <span>Kotlin (Native Android Development)</span>
+            <span>Visual Studio Code &amp; Android Studio </span>
           </div>
           <div class="skill-item">
-            <span>Vue &amp; JS Language</span>
+            <span>Firebase, Supabase &amp; MySQL</span>
           </div>
           <div class="skill-item">
             <span>Git &amp; GitHub Architecture</span>
@@ -671,6 +684,10 @@
         ></a>
       </div>
     </footer>
+
+    <button class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
