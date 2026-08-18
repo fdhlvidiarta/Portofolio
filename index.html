@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fadhil Vidiarta — Premium Portfolio & CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body class="lang-id">
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <div class="bg-container">
+      <div class="cyber-grid"></div>
+      <div class="glowing-orb orb-purple"></div>
+      <div class="glowing-orb orb-blue"></div>
+      <div class="glowing-orb orb-cyan"></div>
+      <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <nav>
+      <div class="nav-container">
+        <span class="nav-logo">FV<span>.</span></span>
+        <ul class="nav-links">
+          <li>
+            <a href="#home" class="nav-link active"
+              ><span class="lang-id">Beranda</span
+              ><span class="lang-en">Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#about" class="nav-link"
+              ><span class="lang-id">Tentang</span
+              ><span class="lang-en">About</span></a
+            >
+          </li>
+          <li>
+            <a href="#education" class="nav-link"
+              ><span class="lang-id">Pendidikan</span
+              ><span class="lang-en">Education</span></a
+            >
+          </li>
+          <li>
+            <a href="#experience" class="nav-link"
+              ><span class="lang-id">Pengalaman</span
+              ><span class="lang-en">Experience</span></a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="nav-link"
+              ><span class="lang-id">Proyek</span
+              ><span class="lang-en">Projects</span></a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="nav-link"
+              ><span class="lang-id">Keahlian</span
+              ><span class="lang-en">Skills</span></a
+            >
+          </li>
+          <li>
+            <a href="#certificates" class="nav-link"
+              ><span class="lang-id">Sertifikat</span
+              ><span class="lang-en">Certificates</span></a
+            >
+          </li>
+        </ul>
+        <div class="nav-controls">
+          <button
+            class="lang-toggle"
+            id="langToggle"
+            aria-label="Switch Language"
+          >
+            <span class="flag-icon">ID</span>
+          </button>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle Theme"
+          >
+            <i class="fa-solid fa-sun"></i>
+          </button>
+          <div class="nav-toggle" id="navToggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero section-target" id="home">
+      <div class="hero-layout">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Curriculum Vitae &amp; Portfolio</p>
+          <h1 class="hero-name">Fadhil <em>Vidiarta</em></h1>
+          <p class="hero-role lang-id">
+  Portofolio ini adalah ruang untuk bereksperimen, berbagi karya, dan menampilkan sisi kreatif saya.
+</p>
+<p class="hero-role lang-en">
+  This portfolio is a space to experiment, share projects, and highlight my creative side.
+</p>
+
+          <div class="hero-cta">
+            <a href="mailto:vidiartafadhil@gmail.com" class="btn btn-primary">
+              <i class="fa-regular fa-envelope"></i>
+              <span class="lang-id">Hubungi Saya</span
+              ><span class="lang-en">Get In Touch</span>
+            </a>
+            <a href="#projects" class="btn btn-outline">
+              <span class="lang-id">Lihat Proyek</span
+              ><span class="lang-en">Explore Projects</span>
+              <i class="fa-solid fa-arrow-down-long"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="image-inner-border"></div>
+          <img
+            src="assets/me.jpeg"
+            alt="Fadhil Vidiarta Profile"
+            class="hero-photo"
+          />
+          <div class="image-glare"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section section-target" id="about">
+      <p class="section-label">
+        <span class="lang-id">Ringkasan</span
+        ><span class="lang-en">Summary</span>
+      </p>
+      <h2 class="section-title">
+        <span class="lang-id">Profil</span><span class="lang-en">Profile</span>
+      </h2>
+      <div class="summary-container">
+        <p class="summary-text lang-id">
+          Lulusan D3 Teknologi Informasi dengan minat kuat di bidang
+          infrastruktur jaringan. Pengalaman teknis lapangan saya peroleh
+          melalui Praktik Kerja Lapangan (PKL) di penyedia layanan internet
+          (ISP), di mana saya ikut membantu proses instalasi jaringan (Fiber
+          Optic, LAN, PTP) dan pemeliharaan perangkat. Sebagai lulusan baru,
+          saya terbiasa bekerja dalam tim, memiliki kemauan keras untuk terus
+          belajar, dan siap untuk terjun langsung ke dunia kerja operasional IT.
+        </p>
+        <p class="summary-text lang-en">
+          A Diploma 3 Information Technology graduate with a strong interest in
+          network infrastructure. I gained technical field experience through
+          Internships (PKL) at an internet service provider (ISP), where I
+          assisted with network installations (Fiber Optic, LAN, PTP) and device
+          maintenance. As a recent graduate, I am accustomed to working in a
+          team, have a strong desire to continue learning, and am ready to dive
+          headfirst into the world of IT operations.
+        </p>
+      </div>
+      <div class="about-contact-grid">
+        <div class="about-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="contact-info">
+            <span class="contact-label"
+              ><span class="lang-id">Lokasi</span
+              ><span class="lang-en">Location</span></span
+            >
+            <span class="contact-value">Madiun, Jawa Timur</span>
+          </div>
+        </div>
+        <div class="about-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <div class="contact-info">
+            <span class="contact-label"
+              ><span class="lang-id">Telepon</span
+              ><span class="lang-en">Phone</span></span
+            >
+            <span class="contact-value">+6285746835795</span>
+          </div>
+        </div>
+        <div class="about-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div class="contact-info">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">fadhilv05@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-target" id="education">
+      <p class="section-label">
+        <span class="lang-id">Jalur Akademik</span
+        ><span class="lang-en">Academic Path</span>
+      </p>
+      <h2 class="section-title">
+        <span class="lang-id">Pendidikan</span
+        ><span class="lang-en">Education</span>
+      </h2>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-header">
+            <div class="edu-degree">
+              <span class="lang-id">Diploma III Teknologi Informasi</span>
+              <span class="lang-en">Diploma III in Information Technology</span>
+            </div>
+            <div class="edu-year">2023 – 2026</div>
+          </div>
+          <div class="edu-school">
+            <span class="lang-id"
+              >Politeknik Negeri Madiun
+              <span class="edu-location">| Madiun, Indonesia</span></span
+            >
+            <span class="lang-en"
+              >State Polytechnic of Madiun
+              <span class="edu-location">| Madiun, Indonesia</span></span
+            >
+          </div>
+          <div class="edu-detail">
+            <span class="lang-id">
+              Belajar dan berpengalaman di bidang Networking (LAN, WAN, WLAN,
+              Fiber Optic), Network Security dengan Snort & Suricata, serta
+              Software Development khususnya mobile apps. Terbiasa mengerjakan
+              proyek jaringan sekaligus pengembangan aplikasi.
+            </span>
+            <span class="lang-en">
+              Studied and experienced in Networking (LAN, WAN, WLAN, Fiber
+              Optic), Network Security with Snort & Suricata, and Software
+              Development, especially mobile apps. Experienced in working on
+              network projects and application development.
+            </span>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-header">
+            <div class="edu-degree">
+              <span class="lang-id">Teknik Komputer &amp; Jaringan</span>
+              <span class="lang-en">Network &amp; Computer Engineering</span>
+            </div>
+            <div class="edu-year">2020 – 2023</div>
+          </div>
+          <div class="edu-school">
+            <span class="lang-id"
+              >SMKN 1 Jiwan
+              <span class="edu-location">| Madiun, Indonesia</span></span
+            >
+            <span class="lang-en"
+              >Vocational High School 1 Jiwan
+              <span class="edu-location">| Madiun, Indonesia</span></span
+            >
+          </div>
+          <div class="edu-detail">
+            <span class="lang-id">
+              Fokus pada Network Troubleshooting, konfigurasi LAN/WAN,
+              implementasi Mikrotik, dan penerapan FTTH (Fiber to the Home).
+              Terlatih dalam menangani masalah jaringan serta mengelola
+              perangkat jaringan secara praktis.
+            </span>
+            <span class="lang-en">
+              Focuses on network troubleshooting, LAN/WAN configuration,
+              Mikrotik implementation, and FTTH (Fiber to the Home) deployment.
+              Trained in handling network issues and managing network devices
+              practically.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-target" id="experience">
+      <p class="section-label">
+        <span class="lang-id">Riwayat Kerja</span
+        ><span class="lang-en">Work History</span>
+      </p>
+      <h2 class="section-title">
+        <span class="lang-id">Pengalaman</span
+        ><span class="lang-en">Experience</span>
+      </h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">September 2025 – Oktober 2025</div>
+          <div class="timeline-role">
+            <span class="lang-id">Staf Sortir Barang (Paruh Waktu)</span
+            ><span class="lang-en">Package Sorter (Partime)</span>
+          </div>
+          <div class="timeline-company">Gateway J&T Madiun</div>
+          <div class="timeline-desc lang-id">
+            Bertanggung jawab dalam pengelolaan arus logistik barang, menjamin
+            efisiensi alur distribusi, dan optimasi pemrosesan paket pada pusat
+            sortir wilayah secara tepat waktu.
+          </div>
+          <div class="timeline-desc lang-en">
+            Responsible for managing logistics flow, ensuring distribution
+            efficiency, and optimizing timely package processing at the regional
+            sorting center.
+          </div>
+        </div>
+
+        <!-- Jobdesk 1: Engineer On Site -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">Februari 2025 – Juni 2025</div>
+          <div class="timeline-role">
+            <span class="lang-id">Engineer On Site (Magang)</span>
+            <span class="lang-en">Engineer On Site (Internship)</span>
+          </div>
+          <div class="timeline-company">PT. Lintas Data Prima POP Madiun</div>
+          <div class="timeline-desc lang-id">
+            Instalasi dan konfigurasi infrastruktur jaringan (LAN, PTP, CCTV,
+            Server), deployment dan optimisasi Access Point (Ruijie, Ubiquiti,
+            TP-Link), serta maintenance dan troubleshooting.
+          </div>
+          <div class="timeline-desc lang-en">
+            Installed and configured network infrastructure (LAN, PTP, CCTV,
+            Server), deployed and optimized Access Points (Ruijie, Ubiquiti,
+            TP-Link), and performed maintenance and troubleshooting.
+          </div>
+        </div>
+
+        <!-- Jobdesk 2: Broadband -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">Januari 2025</div>
+          <div class="timeline-role">
+            <span class="lang-id">Broadband (Magang)</span>
+            <span class="lang-en">Broadband (Apprenticeship)</span>
+          </div>
+          <div class="timeline-company">PT. Lintas Data Prima POP Madiun</div>
+          <div class="timeline-desc lang-id">
+            Instalasi jaringan broadband ke lokasi pelanggan, penarikan kabel
+            dropcore, konfigurasi modem, serta splicing kabel fiber optik untuk
+            meminimalisir redaman sinyal.
+          </div>
+          <div class="timeline-desc lang-en">
+            Installed broadband networks at customer sites, handled dropcore
+            cable pulling, configured modems, and performed fiber optic splicing
+            to minimize signal loss.
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">Juni 2022 – Agustus 2022</div>
+          <div class="timeline-role">
+            <span class="lang-id">Technical Support (Magang)</span>
+            <span class="lang-en">Technical Support (Internship)</span>
+          </div>
+          <div class="timeline-company">Azriel Komputindo</div>
+          <div class="timeline-desc lang-id">
+            Melakukan perakitan, perbaikan, dan peningkatan performa PC/Laptop,
+            termasuk penggantian komponen hardware (RAM, Hard Drive, Power
+            Supply). Menginstalasi sistem operasi dan perangkat lunak pendukung,
+            serta memastikan kompatibilitas sistem.
+          </div>
+          <div class="timeline-desc lang-en">
+            Assembled, repaired, and upgraded PCs/Laptops, including hardware
+            replacement (RAM, Hard Drive, Power Supply). Installed operating
+            systems and supporting software, ensuring system compatibility.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PROYEK -->
+    <section class="section section-target" id="projects">
+      <p class="section-label">
+        <span class="lang-id">Sorotan Portofolio</span
+        ><span class="lang-en">Portfolio Highlights</span>
+      </p>
+      <h2 class="section-title">
+        <span class="lang-id">Proyek</span><span class="lang-en">Projects</span>
+      </h2>
+      <div class="project-grid">
+        <!-- CARD 1: Geprek POS -->
+        <div class="project-card">
+          <div class="project-image-wrapper">
+            <img
+              src="assets/Poster POS Outlet Ayam Geprek Kriuk.png"
+              alt="Poster POS Outlet Ayam Kriuk"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">Geprek Mr. Kriuk POS App</h3>
+            <p class="project-desc lang-id">
+              Aplikasi Point of Sales komprehensif berbasis Android yang
+              dikembangkan dengan Framework Flutter/Dart dan diintegrasikan
+              dengan database guna memudahkan transaksi kasir dan manajemen menu
+              UMKM.
+            </p>
+            <p class="project-desc lang-en">
+              A comprehensive Android-based Point of Sales application developed
+              with the Flutter/Dart framework and integrated with a cloud
+              database to facilitate transaction and menu management for MSMEs.
+            </p>
+            <div class="project-tags">
+              <span>Dart</span>
+              <span>Flutter Framework</span>
+              <span>Firebase DB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2: BMI Calculator -->
+        <div class="project-card">
+          <div class="project-image-wrapper">
+            <img
+              src="assets/BMI Calculator dengan monitoring berat badan.png"
+              alt="Poster BMI Calculator"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">
+              <span class="lang-id"
+                >Aplikasi Kalkulator BMI &amp; Pemantauan Berat</span
+              >
+              <span class="lang-en"
+                >BMI Calculator App with Weight Monitoring</span
+              >
+            </h3>
+            <p class="project-desc lang-id">
+              Aplikasi seluler yang dikembangkan menggunakan bahasa Kotlin asli
+              di Android Studio. Berfungsi sebagai kalkulator BMI sekaligus
+              menyediakan fitur pelacakan riwayat berat badan berbasis CRUD
+              lokal tanpa memerlukan koneksi internet, dikemas dalam UI yang
+              bersih.
+            </p>
+            <p class="project-desc lang-en">
+              A mobile application developed using Native Kotlin in Android
+              Studio for health management. Implements local CRUD operations for
+              historical weight tracking, providing an offline-first user
+              experience with a clean UI.
+            </p>
+            <div class="project-tags">
+              <span>Kotlin</span>
+              <span>Native Android</span>
+              <span>Local CRUD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3: V-Lab ASJ -->
+        <div class="project-card">
+          <div class="project-image-wrapper">
+            <img
+              src="assets/Poster Vlab-ASJ.png"
+              alt="Poster Media Pembelajaran Cloud V-LAb ASJ"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-name">
+              <span class="lang-id"
+                >Platform Praktikum Virtual Berbasis Cloud (V-Lab ASJ)</span
+              >
+              <span class="lang-en"
+                >Cloud-Based Virtual Laboratory Platform (V-Lab ASJ)</span
+              >
+            </h3>
+            <p class="project-desc lang-id">
+              Proyek Tugas Akhir berupa platform laboratorium virtual berbasis
+              cloud untuk media pembelajaran Administrasi Server dan Layanan
+              Jaringan. Platform yang kompleks ini dibangun menggunakan
+              CodeIgniter 4 dan integrasi API Proxmox VE, menyediakan terminal
+              web real-time (WebSocket) dan manajemen LXC Container agar
+              praktikum siswa lebih optimal dan fleksibel.
+            </p>
+            <p class="project-desc lang-en">
+              A Final Project featuring a cloud-based virtual laboratory
+              platform for Server Administration and Network Services learning.
+              This complex platform is built using CodeIgniter 4 and Proxmox VE
+              API integration, providing a real-time web terminal (WebSocket)
+              and LXC Container management for flexible and optimized student
+              practical work.
+            </p>
+            <div class="project-tags">
+              <span>PHP</span>
+              <span>CodeIgniter 4</span>
+              <span>Cloud VPS (Proxmox VE)</span>
+              <span>WebSocket</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION SKILLS -->
+    <section class="section section-target" id="skills">
+      <p class="section-label">
+        <span class="lang-id">Keahlian &amp; Tools</span
+        ><span class="lang-en">Technical Stack</span>
+      </p>
+      <h2 class="section-title">
+        <span class="lang-id">Keahlian &amp; Perangkat</span
+        ><span class="lang-en">What I Bring</span>
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-title">
+            <i class="fa-solid fa-network-wired"></i> Network Engineering
+          </div>
+          <div class="skill-item">
+            <span>Local &amp; Wide Area Network (LAN / WAN)</span>
+          </div>
+          <div class="skill-item">
+            <span>Fiber To The Home (FTTH) Infrastructure</span>
+          </div>
+          <div class="skill-item">
+            <span>Mikrotik</span>
+          </div>
+          <div class="skill-item">
+            <span>Cloud Computing &amp; Server Infrastructure</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">
+            <i class="fa-solid fa-code"></i> Web Dev, Mobile Dev &amp; Backend
+            Engineering
+          </div>
+          <div class="skill-item">
+            <span>CodeIgniter &amp; PHP Language</span>
+          </div>
+          <div class="skill-item">
+            <span>Flutter Framework &amp; Dart Language</span>
+          </div>
+          <div class="skill-item">
+            <span>Kotlin (Native Android Development)</span>
+          </div>
+          <div class="skill-item">
+            <span>Vue &amp; JS Language</span>
+          </div>
+          <div class="skill-item">
+            <span>Git &amp; GitHub Architecture</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">
+            <i class="fa-solid fa-language"></i>
+            <span class="lang-id">Bahasa</span
+            ><span class="lang-en">Languages</span>
+          </div>
+          <div class="skill-item">
+            <span class="lang-id">Indonesia (Penutur Asli)</span>
+            <span class="lang-en">Indonesian (Native)</span>
+          </div>
+          <div class="skill-item">
+            <span class="lang-id">Inggris (Menengah)</span>
+            <span class="lang-en">English (Intermediate)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION SERTIFIKAT -->
+    <section class="section section-target" id="certificates">
+      <p class="section-label">
+        <span class="lang-id">Pencapaian &amp; Validasi</span
+        ><span class="lang-en">Achievements &amp; Validation</span>
+      </p>
+      <h2 class="section-title">
+        <span class="lang-id">Sertifikat</span
+        ><span class="lang-en">Certificates</span>
+      </h2>
+
+      <!-- GRID SERTIFIKAT DIPERBARUI -->
+      <div class="cert-grid">
+        <!-- CARD SERTIFIKAT 1 -->
+        <div class="cert-card">
+          <div class="cert-image-wrapper">
+            <img
+              src="assets/Sertifikat Pelatihan VSGA Intermediate Network Administrator_page-0001.jpg"
+              alt="Sertifikat Cisco Networking Basics"
+            />
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-name">Intermediate Network Administrator</h3>
+            <p class="cert-issuer">Vocational School Graduate Academy Digital Talent Scholarship 2025 (VSGA)</p>
+            <p class="cert-desc lang-id">
+              Sertifikasi yang memvalidasi pemahaman dasar mengenai jaringan
+              komputer, arsitektur internet, dan cara kerja perangkat jaringan.
+            </p>
+            <p class="cert-desc lang-en">
+              Certification validating foundational understanding of computer
+              networking, internet architecture, and how network devices
+              operate.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="cert-grid">
+        <!-- CARD SERTIFIKAT 1 -->
+        <div class="cert-card">
+          <div class="cert-image-wrapper">
+            <img
+              src="assets/Junior Mobile Programmer.jpeg"
+              alt="Sertifikat BNSP Junior Mobile Programmer"
+            />
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-name">Junior Mobile Programmer</h3>
+            <p class="cert-issuer">BNSP</p>
+            <p class="cert-desc lang-id">
+              Sertifikasi resmi dari Badan Nasional Sertifikasi Profesi (BNSP) yang memvalidasi kompetensi dalam pengembangan perangkat lunak mobile. Fokus pada perancangan, implementasi, dan pengujian aplikasi berbasis Android dengan standar industri.
+            <p class="cert-desc lang-en">
+              Official certification from the National Professional Certification Agency (BNSP) that validates competency in mobile software development. Focuses on designing, implementing, and testing Android-based applications to industry standards.
+            </p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+  <div class="cert-image-wrapper">
+    <img
+      src="assets/Sertifikat Pelatihan VSGA Mobile Programer_page-0001.jpg"
+      alt="Sertifikat Pelatihan Mobile Programmer"
+    />
+  </div>
+  <div class="cert-content">
+    <h3 class="cert-name">Junior Mobile Programmer</h3>
+    <p class="cert-issuer">
+      Vocational School Graduate Academy Digital Talent Scholarship 2024 (VSGA)
+    </p>
+    <p class="cert-desc lang-id">
+      Sertifikat pelatihan resmi dari KOMINFO melalui program VSGA Digital Talent Scholarship 2024, 
+      yang menyatakan kelulusan pada bidang Junior Mobile Programmer.
+    </p>
+    <p class="cert-desc lang-en">
+      Official training certificate from KOMINFO under the VSGA Digital Talent Scholarship 2024, 
+      awarded for graduation in the Junior Mobile Programmer field.
+    </p>
+  </div>
+</div>
+
+      
+
+        <!-- CARD SERTIFIKAT 2 (Bisa ditambahkan jika ada) -->
+        <div class="cert-card">
+          <div class="cert-image-wrapper">
+            <img
+              src="assets/Sertifikat Uji Kompetensi.jpeg"
+              alt="Sertifikat Kompetensi Keahlian"
+            />
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-name">Uji Kompetensi Keahlian (UKK)</h3>
+            <p class="cert-issuer">SMKN 1 Jiwan</p>
+            <p class="cert-desc lang-id">
+              Sertifikat kelulusan uji kompetensi keahlian Teknik Komputer dan
+              Jaringan dengan predikat sangat baik.
+            </p>
+            <p class="cert-desc lang-en">
+              Certificate of graduation for the Computer and Network Engineering
+              competency test with excellent predicate.
+            </p>
+          </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Designed &amp; Crafted by Fadhil Vidiarta.</p>
+      <div class="footer-socials">
+        <a href="mailto:fadhilv05@gmail.com" title="Email Me"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
