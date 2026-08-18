@@ -283,11 +283,6 @@ window.addEventListener("DOMContentLoaded", () => {
       { scale: 1.1, opacity: 0, duration: 1.5, ease: "expo.out" },
       "-=0.8",
     )
-    .from(
-      ".hero-cta .btn",
-      { y: 15, opacity: 0, duration: 0.6, stagger: 0.15, ease: "power3.out" },
-      "-=1",
-    )
     .from(".hero-scroll-hint", { opacity: 0, duration: 0.5 }, "-=0.4");
 
   // Animasi Judul
